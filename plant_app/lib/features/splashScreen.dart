@@ -15,7 +15,7 @@ class _SplashscreenState extends State<Splashscreen> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 3),(){
-       RouteGenerator.navigateToPage(context, Routes.getStartedRoute);
+       RouteGenerator.navigateToPage(context, Routes.onbordingRoute);
     }
     );
     
@@ -26,7 +26,7 @@ class _SplashscreenState extends State<Splashscreen> {
       body: Center(
         child: Image.asset(
           color: primaryColor,
-          "images/assets/plant.png"
+          "assets/images/plant.png"
         ),
       ),
     );

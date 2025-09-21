@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_app/core/utils/color_utils.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   final Function()? onPressed;
@@ -20,14 +21,14 @@ class CustomElevatedButton extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       child: SizedBox(
         height: 50,
-        width: MediaQuery.of(context).size.width * 0.98,
+        width: MediaQuery.of(context).size.width * 0.3,
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
-            backgroundColor: backgroundColor ?? const Color.fromARGB(255, 2, 35, 52),
-            foregroundColor: foregroundColor, // Fixed here
+            backgroundColor: backgroundColor ??primaryColor,
+            foregroundColor: foregroundColor??whiteColor// Fixed here
           ),
           onPressed: onPressed,
           child: child,

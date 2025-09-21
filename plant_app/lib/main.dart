@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_app/features/getStartedPage.dart';
 import 'package:plant_app/features/homePage.dart';
 import 'package:plant_app/features/splashScreen.dart';
 

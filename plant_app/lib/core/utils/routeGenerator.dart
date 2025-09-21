@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app/core/utils/routeConst.dart';
+import 'package:plant_app/features/1stpage.dart';
+import 'package:plant_app/features/2ndPage.dart';
+import 'package:plant_app/features/3rdPage.dart';
+import 'package:plant_app/features/getStartedPage.dart';
 import 'package:plant_app/features/onboardingPage.dart';
 
 class RouteGenerator {
@@ -19,8 +23,14 @@ class RouteGenerator {
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case Routes.getStartedRoute:
+      case Routes.onbordingRoute:
         return MaterialPageRoute(builder: (_) => const Onboardingpage());
+        case Routes.getStartedRoute:
+        return MaterialPageRoute(builder: (_) => const Getstartedpage());
+        case Routes.onboarding2Route:
+        return MaterialPageRoute(builder: (_) => const Page2());
+        case Routes.onboarding3Route:
+        return MaterialPageRoute(builder: (_) => const Page3());
      
           
       default:
